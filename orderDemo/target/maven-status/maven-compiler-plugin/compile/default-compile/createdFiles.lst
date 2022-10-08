@@ -1,0 +1,5 @@
+com\seataDemo\entity\OrderTestEntity.class
+com\seataDemo\Controller\OrderTestContorller.class
+com\seataDemo\mapper\OrderTestMapper.class
+com\seataDemo\service\TestService.class
+com\seataDemo\orderDemoApplication.class

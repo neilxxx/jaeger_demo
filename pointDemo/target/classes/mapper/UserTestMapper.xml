@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seataDemo.mapper.UserTestMapper">
+
+    <select id="getById" resultType="com.seataDemo.entity.UserTestEntity">
+        select * from user_test where user_id =#{id} for update
+    </select>
+</mapper>

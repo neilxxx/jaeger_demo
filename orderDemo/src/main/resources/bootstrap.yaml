@@ -1,0 +1,37 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.100.251:8848
+#        username: nacos
+#        password: xhfnacos
+      discovery:
+        server-addr: 172.16.100.251:8848
+#        username: nacos
+#        password: xhfnacos
+
+  datasource:
+    url: jdbc:mysql://192.168.126.126:3306/order_test?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+opentracing:
+  jaeger:
+    enabled: true
+    log-spans: true
+    const-sampler:
+      decision: true
+    udp-sender:
+      host: localhost
+      port: 6831
+
+
+
